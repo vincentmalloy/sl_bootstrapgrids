@@ -1,0 +1,17 @@
+{
+    "name": "simon-lundius/sl_bootstrapgrids",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "homepage": "https://github.com/vincentmalloy",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "typo3/cms-core": "^9.5",
+        "gridelementsteam/gridelements": "^9.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "SimonLundius\\BootstrapGrids\\": "Classes/"
+        }
+    }
+}

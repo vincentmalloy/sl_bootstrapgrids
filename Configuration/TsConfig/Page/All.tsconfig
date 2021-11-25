@@ -1,0 +1,4 @@
+#
+# PageTS for bootstrapgrids
+#
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sl_bootstrapgrids/Configuration/TsConfig/Page/GridElements/GridDefinitions.tsconfig">

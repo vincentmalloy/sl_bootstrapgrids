@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT type="array">
+                <TCEforms>
+                    <sheetTitle>Grid-Setup</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el type="array">
+                    <colOneWidth type="array">
+                        <TCEforms type="array">
+                            <label>Column One Width</label>
+                            <onChange>reload</onChange>
+                            <config type="array">
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <itemsProcFunc>SimonLundius\BootstrapGrids\Controller\FlexformController->getColumnOptions</itemsProcFunc>
+                                <default>3</default>
+                            </config>
+                        </TCEforms>
+                    </colOneWidth>
+                    <colTwoWidth>
+                        <TCEforms type="array">
+                            <label>Column Two Width</label>
+                            <onChange>reload</onChange>
+                            <config type="array">
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <itemsProcFunc>SimonLundius\BootstrapGrids\Controller\FlexformController->getColumnOptions</itemsProcFunc>
+                                <default>3</default>
+                            </config>
+                        </TCEforms>
+                    </colTwoWidth>
+                    <colThreeWidth>
+                        <TCEforms type="array">
+                            <label>Column Three Width</label>
+                            <onChange>reload</onChange>
+                            <config type="array">
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <itemsProcFunc>SimonLundius\BootstrapGrids\Controller\FlexformController->getColumnOptions</itemsProcFunc>
+                                <default>3</default>
+                            </config>
+                        </TCEforms>
+                    </colThreeWidth>
+                    <colFourWidth>
+                        <TCEforms type="array">
+                            <label>Column Four Width</label>
+                            <onChange>reload</onChange>
+                            <config type="array">
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <itemsProcFunc>SimonLundius\BootstrapGrids\Controller\FlexformController->getColumnOptions</itemsProcFunc>
+                                <default>3</default>
+                            </config>
+                        </TCEforms>
+                    </colFourWidth>
+                    <noGutters>
+                        <TCEforms type="array">
+                            <label>LLL:EXT:sl_bootstrapgrids/Resources/Private/Language/locallang_be:flexform.noGutters</label>
+                            <config type="array">
+                                <type>check</type>
+                            </config>
+                        </TCEforms>
+                    </noGutters>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

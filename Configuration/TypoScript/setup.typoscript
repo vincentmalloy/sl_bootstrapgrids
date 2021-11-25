@@ -1,0 +1,15 @@
+#add template root paths to gridelements setup
+lib.gridelements.defaultGridSetup =< lib.contentElement
+lib.gridelements.defaultGridSetup {
+    templateRootPaths {
+        42 = EXT:sl_bootstrapgrids/Resources/Extension/Gridelements/Private/Templates
+    }
+    layoutRootPaths {
+        42 = EXT:sl_bootstrapgrids/Resources/Extension/Gridelements/Private/Layouts
+    }
+    partialRootPaths {
+        42 = EXT:sl_bootstrapgrids/Resources/Extension/Gridelements/Private/Partials
+    }
+}
+tt_content.gridelements_pi1 < lib.gridelements.defaultGridSetup
+tt_content.gridelements_view < tt_content.gridelements_pi1
