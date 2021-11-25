@@ -5,6 +5,11 @@
     "homepage": "https://github.com/vincentmalloy",
     "license": ["GPL-2.0-or-later"],
     "keywords": ["TYPO3 CMS"],
+    "extra": {
+        "typo3/cms": {
+           "extension-key": "sl_bootstrapgrids"
+        }
+    },
     "require": {
         "typo3/cms-core": "^9.5",
         "gridelementsteam/gridelements": "^9.7"

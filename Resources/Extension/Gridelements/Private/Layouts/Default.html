@@ -1,5 +1,4 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<f:debug>{_all}</f:debug>
 <f:spaceless>
     <f:if condition="{data.frame_class} != none">
         <f:then>
@@ -15,21 +14,26 @@
                 <f:if condition="{data._LOCALIZED_UID}">
                     <a id="c{data._LOCALIZED_UID}"></a>
                 </f:if>
-                <f:if condition="{options.respectColumns}">
-                    <f:then>
-                        <f:if condition="{options.respectRows}">
-                            <f:then>
-                                <f:render section="Rows"/>
-                            </f:then>
-                            <f:else>
-                                <f:render section="Columns"/>
-                            </f:else>
-                        </f:if>
-                    </f:then>
-                    <f:else>
-                        <f:render section="Default"/>
-                    </f:else>
-                </f:if>
+                <div class="row">
+                    <f:if condition="{data.flexform_colOneWidth}">
+                        <f:render section="Col1"/>
+                    </f:if>
+                    <f:if condition="{data.flexform_colTwoWidth}">
+                        <f:render section="Col2"/>
+                    </f:if>
+                    <f:if condition="{data.flexform_colThreeWidth}">
+                        <f:render section="Col3"/>
+                    </f:if>
+                    <f:if condition="{data.flexform_colFourWidth}">
+                        <f:render section="Col4"/>
+                    </f:if>
+                    <f:if condition="{data.flexform_colFiveWidth}">
+                        <f:render section="Col5"/>
+                    </f:if>
+                    <f:if condition="{data.flexform_colSixWidth}">
+                        <f:render section="Col6"/>
+                    </f:if>
+                </div>
             </div>
 
         </f:then>
@@ -39,21 +43,26 @@
                 <f:if condition="{data._LOCALIZED_UID}">
                     <a id="c{data._LOCALIZED_UID}"></a>
                 </f:if>
-                <f:if condition="{options.respectColumns}">
-                    <f:then>
-                        <f:if condition="{options.respectRows}">
-                            <f:then>
-                                <f:render section="Rows"/>
-                            </f:then>
-                            <f:else>
-                                <f:render section="Columns"/>
-                            </f:else>
-                        </f:if>
-                    </f:then>
-                    <f:else>
-                        <f:render section="Default"/>
-                    </f:else>
-                </f:if>
+                <div class="row">
+                    <f:if condition="{data.flexform_colOneWidth}">
+                        <f:render section="Col1"/>
+                    </f:if>
+                    <f:if condition="{data.flexform_colTwoWidth}">
+                        <f:render section="Col2"/>
+                    </f:if>
+                    <f:if condition="{data.flexform_colThreeWidth}">
+                        <f:render section="Col3"/>
+                    </f:if>
+                    <f:if condition="{data.flexform_colFourWidth}">
+                        <f:render section="Col4"/>
+                    </f:if>
+                    <f:if condition="{data.flexform_colFiveWidth}">
+                        <f:render section="Col5"/>
+                    </f:if>
+                    <f:if condition="{data.flexform_colSixWidth}">
+                        <f:render section="Col6"/>
+                    </f:if>
+                </div>
             </div>
 
         </f:else>
